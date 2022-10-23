@@ -11,10 +11,3 @@ class ConnectRequest(BaseModel):
     password: str
     host: str
     database: str
-
-class GenderSubmission(BaseModel):
-    PassengerId: int
-    Survived: int
-
-    class Config:
-        orm_mode = True

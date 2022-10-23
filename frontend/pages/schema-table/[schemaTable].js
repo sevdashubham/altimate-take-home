@@ -86,7 +86,7 @@ export default function SchemaTable() {
                         <td className="py-4 px-6">{type}</td>
                         <td className="py-4 px-6">{metric_count}</td>
                         <td className="py-4 px-6">{distinct}</td>
-                        <td className="py-4 px-6">{average.toFixed(2)}</td>
+                        <td className="py-4 px-6">{Number.isInteger(average) ? average.toFixed(2): average}</td>
                     </tr>
                 );
             });
